@@ -25,6 +25,6 @@
 
 ------
 
-  Bonne utilisation à tous, et juste au comme ça au passage... Cette application est sous licence MIT !
+  Bonne utilisation à tous, et juste comme ça au passage... Cette application est sous licence MIT !
 
   Daniel, 20 mars 2021
