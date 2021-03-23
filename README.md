@@ -6,6 +6,8 @@
 
   Cette application permet de déployer facilement et rapidement un moyen de saisir des données dans un format texte ou CSV. Elle est entièrement paramétrable par l'utilisateur, juste en modifiant son fichier de configuration open_r.ini. Pour savoir comment s'y prendre, il suffit de suivre les instructions dans ce fichier de configuration et de le mettre à votre sauce ;) .  
 
+  Je suis actuellement en train de bosser sur un rajout de fonctionnalités permettant d'utiliser une base de données SQLite3, et une autre permettant de faire une lecture rapide du fichier de relevé, directement depuis l'application.  
+
   Il est possible également de lui faire envoyer un mail à une adresse prédéfinie, en utilisant un serveur de messagerie de type SMTP. (Google, Yahoo, etc...)  
 
   Je tiens à préciser que, pour pouvoir envoyer des mails avec cette application (j'ai utilisé Gmail pour base de messagerie ici), il faut au préalable activer le paramètre 'Accès moins sécurisé des applications'. Vous le trouverez à l'emplacement suivant depuis votre boite Gmail :  
@@ -17,15 +19,13 @@
                     +- Sécurité
                         +- Accès moins sécurisé des applications
 
-  N'importe quel serveur de messagerie permet ce genre de contrôle normalement. Ici c'est le cas de Google (sponsor officiel de la NSA), donc si eux le permettent et pas le votre, c'est qu'il est vraiment temps pour vous de changer de boite mail :D ! Pour vous simplifier la tâche et ne pas courir de risque avec votre boite email principale, prenez vous 10 minutes et faites vous une adresse email sous Google pour pouvoir vous en servir avec cette application.  
-
-  Un update de sécurité viendra bientôt, afin d'éviter de renseigner le mot de passe directement dans le fichier de configuration open_r.ini.
+  N'importe quel serveur de messagerie permet ce genre de contrôle normalement. Ici c'est le cas de Google! Un update de sécurité est en cours de développement concernant l'usage du mot de passe. Pour vous simplifier la tâche et ne pas courir de risque avec votre boite email principale, prenez vous 10 minutes et faites vous une adresse email sous Google pour pouvoir vous en servir avec cette application.  
 
   Un fichier zip viendra également s'intégrer dans le dépot ici présent contenant une version exécutable autonome pour les utilisateurs de Windows qui ne souhaitent pas utiliser la version opensource en Python3. Cette version ne nécessitera pas d'installation, et ne pourra tourner que sous Windows10 (désolé pour ceux qui font de la résistance en utilisant la version 7)  
 
 ------
 
-  Voici un exemple rapide, ce qu'il est possible de faire.
+  Voici un exemple rapide, ce qu'il est possible de faire.  
 
   Supposons que vous travaillez dans une unité de production, et que vous vouliez réaliser un suivi des variations d'une machine, du genre SPC (Statistic Process Control), sur un lot de pièces. Supposons qu'il y a deux diamètres à vérifier, une longueur et un état de surface. Avec Open-Rnotes, il est possible de déployer l'application de façon à ce que l'opérateur puisse saisir rapidement ces données. Le fichier de configuration open_r.ini ressemblera à ceci (sans les commentaires):  
 
@@ -75,10 +75,11 @@
   Le relevé dans un fichier CSV.
 ![relevé des données](exemple_donnees_csv.png)
 
-  Et voilà.
+  Et voilà.  
 
 ------
 
-  Bonne utilisation à tous, et juste comme ça au passage... Cette application est sous licence MIT !
+  Pour finir, il faut savoir que cette application est sous license de type MIT.  
+  Bonne utilisation à tous.  
 
   Daniel, 20 mars 2021
